@@ -22,6 +22,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services & Products", href: "/services", hasDropdown: true },
   { name: "Projects", href: "/projects" },
+  { name: "Training Advertisement", href: "/training-advertisement" },
   { name: "Career", href: "/career" },
   { name: "Contact Us", href: "/contact" },
 ];
