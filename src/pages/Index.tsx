@@ -1,6 +1,13 @@
 import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
+// Affiliation logos
+import cfaInstitute from "@/assets/affiliations/cfa-institute.png";
+import isaca from "@/assets/affiliations/isaca.png";
+import pmi from "@/assets/affiliations/pmi.png";
+import hrdCorp from "@/assets/affiliations/hrd-corp.png";
+import hrdCorpBadge from "@/assets/affiliations/hrd-corp-badge.png";
 import { 
   Shield, 
   Lock, 
@@ -323,6 +330,55 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
                 </div>
                 <h3 className="font-semibold text-foreground text-xl mb-3">{value.title}</h3>
                 <p className="text-muted-foreground text-sm">{value.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Affiliation Section */}
+      <section className="py-20 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <span className="text-gradient">Affiliation</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Collaboration fosters the development and implementation of strategic business initiatives, driving organizational growth and efficiency.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16"
+          >
+            {[
+              { src: cfaInstitute, alt: "CFA Institute" },
+              { src: isaca, alt: "ISACA" },
+              { src: pmi, alt: "Project Management Institute" },
+              { src: hrdCorp, alt: "HRD Corp" },
+              { src: hrdCorpBadge, alt: "HRD Corp Registered Training Provider" },
+            ].map((logo, index) => (
+              <motion.div
+                key={logo.alt}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-4 bg-card rounded-xl shadow-card hover:shadow-elevated transition-shadow"
+              >
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
               </motion.div>
             ))}
           </motion.div>
