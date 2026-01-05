@@ -8,6 +8,12 @@ import isaca from "@/assets/affiliations/isaca.png";
 import pmi from "@/assets/affiliations/pmi.png";
 import hrdCorp from "@/assets/affiliations/hrd-corp.png";
 import hrdCorpBadge from "@/assets/affiliations/hrd-corp-badge.png";
+
+// Client logos
+import alamflora from "@/assets/clients/alamflora.png";
+import imtc from "@/assets/clients/imtc.png";
+import persatuanAnakPerak from "@/assets/clients/persatuan-anak-perak.png";
+import majlisBelaSelangor from "@/assets/clients/majlis-belia-selangor.png";
 import { 
   Shield, 
   Lock, 
@@ -365,6 +371,54 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               { src: pmi, alt: "Project Management Institute" },
               { src: hrdCorp, alt: "HRD Corp" },
               { src: hrdCorpBadge, alt: "HRD Corp Registered Training Provider" },
+            ].map((logo, index) => (
+              <motion.div
+                key={logo.alt}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-4 bg-card rounded-xl shadow-card hover:shadow-elevated transition-shadow"
+              >
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Client Section */}
+      <section className="py-20 lg:py-32 bg-secondary/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Our <span className="text-gradient">Client</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              We have successfully partnered with our past clients, delivering tailored solutions that significantly improved their operational efficiency and market positioning.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16"
+          >
+            {[
+              { src: alamflora, alt: "Alamflora" },
+              { src: imtc, alt: "IMTC" },
+              { src: persatuanAnakPerak, alt: "Persatuan Anak Perak" },
+              { src: majlisBelaSelangor, alt: "Majlis Belia Negeri Selangor" },
             ].map((logo, index) => (
               <motion.div
                 key={logo.alt}
