@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
@@ -85,7 +86,7 @@ const stats = [
   { value: "15+", label: "Years Experience" },
 ];
 
-const Index = () => {
+const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <Layout>
       {/* Hero Section */}
@@ -365,6 +366,8 @@ const Index = () => {
       </section>
     </Layout>
   );
-};
+});
+
+Index.displayName = "Index";
 
 export default Index;
