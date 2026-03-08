@@ -8,6 +8,7 @@ import isaca from "@/assets/affiliations/isaca.png";
 import pmi from "@/assets/affiliations/pmi.png";
 import hrdCorp from "@/assets/affiliations/hrd-corp.png";
 import hrdCorpBadge from "@/assets/affiliations/hrd-corp-badge.png";
+import heroBg from "@/assets/hero-bg.png";
 
 // Client logos
 import alamflora from "@/assets/clients/alamflora.png";
@@ -103,11 +104,7 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center gradient-hero cyber-grid overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-        
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
         <div className="container mx-auto px-4 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -116,72 +113,34 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-                <Zap className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Advanced Cybersecurity Solutions</span>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Protecting Digital Assets with{" "}
-                <span className="text-gradient">Advanced Security</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+                Where Security{" "}
+                <br />
+                <span className="text-gradient">Meets Excellence</span>
               </h1>
               
-              <p className="text-lg text-muted-foreground max-w-xl">
-                All Systems GO provides comprehensive cybersecurity services to safeguard 
-                your business against evolving threats. From vulnerability assessments to 
-                24/7 security monitoring, we've got you covered.
-              </p>
-              
               <div className="flex flex-wrap gap-4">
-                <Button asChild size="xl" variant="hero">
-                  <Link to="/services">
-                    Our Services
+                <Button asChild size="xl" className="bg-[hsl(var(--destructive))] hover:bg-[hsl(var(--destructive))]/90 text-white rounded-full px-10 uppercase tracking-wider font-semibold">
+                  <Link to="/contact">
+                    Get Started
                     <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
-                <Button asChild size="xl" variant="hero-outline">
-                  <Link to="/projects">
-                    View Projects
-                    <ChevronRight className="w-5 h-5" />
-                  </Link>
-                </Button>
-              </div>
-              
-              {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border">
-                {stats.map((stat, index) => (
-                  <motion.div
-                    key={stat.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 + index * 0.1 }}
-                    className="text-center"
-                  >
-                    <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                ))}
               </div>
             </motion.div>
             
-            {/* Hero Visual */}
+            {/* Hero Visual - Globe Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="hidden lg:flex justify-center"
             >
-              <div className="relative">
-                <div className="w-80 h-80 rounded-3xl gradient-primary shadow-glow animate-float flex items-center justify-center">
-                  <Shield className="w-40 h-40 text-primary-foreground" />
-                </div>
-                <div className="absolute -top-4 -right-4 w-20 h-20 rounded-2xl bg-card shadow-elevated flex items-center justify-center animate-pulse-glow">
-                  <Lock className="w-10 h-10 text-primary" />
-                </div>
-                <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-2xl bg-card shadow-elevated flex items-center justify-center">
-                  <Server className="w-12 h-12 text-accent" />
-                </div>
-              </div>
+              <img 
+                src={heroBg} 
+                alt="Global security network" 
+                className="w-full max-w-lg object-contain"
+              />
             </motion.div>
           </div>
         </div>
