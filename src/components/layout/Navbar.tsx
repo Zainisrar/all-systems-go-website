@@ -111,7 +111,7 @@ export function Navbar() {
               )}
             </Button>
             <Button asChild>
-              <Link to="/contact">Get Started</Link>
+              <a href="https://wa.me/60198652830" target="_blank" rel="noopener noreferrer">Book Appointment</a>
             </Button>
           </div>
 
@@ -193,9 +193,9 @@ export function Navbar() {
                 )}
                 <div className="pt-4 px-4">
                   <Button asChild className="w-full">
-                    <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                      Get Started
-                    </Link>
+                    <a href="https://wa.me/60198652830" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                      Book Appointment
+                    </a>
                   </Button>
                 </div>
               </div>

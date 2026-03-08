@@ -314,10 +314,10 @@ const AboutUs = () => {
                 your organization's digital future.
               </p>
               <Button asChild size="xl" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                <Link to="/contact">
+                <a href="https://wa.me/60198652830" target="_blank" rel="noopener noreferrer">
                   Book Appointment
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </motion.div>
