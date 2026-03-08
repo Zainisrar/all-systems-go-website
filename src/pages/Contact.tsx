@@ -32,13 +32,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "123 Security Blvd, Suite 100, Cyber City, CC 10001",
-    href: "#"
+    value: "9-1, Wisma Zelan, Jalan Tasik Permaisuri 2, Bandar Tun Razak, 56000 WP Kuala Lumpur",
+    href: "https://maps.google.com/?q=9-1+Wisma+Zelan+Jalan+Tasik+Permaisuri+2+Bandar+Tun+Razak+56000+Kuala+Lumpur"
   },
   {
     icon: Clock,
     title: "Business Hours",
-    value: "Mon - Fri: 9:00 AM - 6:00 PM EST",
+    value: "Mon - Fri: 9:00 AM - 6:00 PM (MYT)",
     href: "#"
   },
 ];
@@ -248,14 +248,14 @@ const Contact = () => {
             className="rounded-3xl overflow-hidden shadow-elevated"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25987368715491!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1635959481649!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d101.7200!3d3.1200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWisma+Zelan+Bandar+Tun+Razak+Kuala+Lumpur!5e0!3m2!1sen!2smy"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="All Systems GO Location"
+              title="All Systems Go Location"
               className="grayscale hover:grayscale-0 transition-all duration-500"
             />
           </motion.div>
