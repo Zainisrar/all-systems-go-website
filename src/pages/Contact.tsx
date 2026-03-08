@@ -20,8 +20,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@allsystemsgo.com",
-    href: "mailto:info@allsystemsgo.com"
+    value: "info@allsysgosdnbhd.com",
+    href: "mailto:info@allsysgosdnbhd.com"
   },
   {
     icon: Phone,
