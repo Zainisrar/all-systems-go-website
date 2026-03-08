@@ -238,29 +238,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 lg:py-32 bg-secondary/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="rounded-3xl overflow-hidden shadow-elevated"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d101.7200!3d3.1200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWisma+Zelan+Bandar+Tun+Razak+Kuala+Lumpur!5e0!3m2!1sen!2smy"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="All Systems Go Location"
-              className="grayscale hover:grayscale-0 transition-all duration-500"
-            />
-          </motion.div>
-        </div>
-      </section>
     </Layout>
   );
 };
