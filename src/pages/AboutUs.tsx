@@ -97,10 +97,10 @@ const AboutUs = () => {
               Who <span className="text-gradient">We Are</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Welcome to All System Go! We specialize in cutting-edge cybersecurity solutions to keep 
-              your organization ahead of evolving threats. Our services include Vulnerability Assessment 
+              Welcome to All Systems Go Sdn Bhd. We specialise in cutting-edge cybersecurity solutions to keep 
+              your organisation ahead of evolving threats. Our services include Vulnerability Assessment 
               & Penetration Testing (VAPT), Security Posture Assessment (SPA), and an upcoming Security 
-              Operations Center (SOC) in partnership with SOCRadar—ensuring you stay secure in today's 
+              Operations Centre (SOC) in partnership with SOCRadar—ensuring you stay secure in today's 
               interconnected world.
             </p>
           </motion.div>
@@ -307,15 +307,15 @@ const AboutUs = () => {
             <div className="absolute inset-0 cyber-grid opacity-20" />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-                Ready to Partner With Us?
+                Get Started With Us
               </h2>
               <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-                Get in touch with our team today and discover how we can help secure 
+                Book an appointment at our office and discover how we can help secure 
                 your organization's digital future.
               </p>
               <Button asChild size="xl" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
                 <Link to="/contact">
-                  Contact Us
+                  Book Appointment
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>

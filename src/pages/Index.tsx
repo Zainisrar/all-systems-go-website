@@ -410,10 +410,10 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
             <div className="absolute inset-0 cyber-grid opacity-20" />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                Ready to Secure Your Business?
+                Get Started With Us
               </h2>
               <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-                Get in touch with our security experts today and discover how we can 
+                Book an appointment at our office and discover how we can 
                 protect your digital assets from evolving cyber threats.
               </p>
               <div className="flex flex-wrap justify-center gap-4">

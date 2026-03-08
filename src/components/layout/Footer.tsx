@@ -116,7 +116,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} All Systems GO. All rights reserved.
+            © {new Date().getFullYear()} All Systems Go Sdn.Bhd. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
