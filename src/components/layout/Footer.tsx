@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Shield, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -30,12 +31,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <Shield className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">
-                All Systems <span className="text-gradient">GO</span>
-              </span>
+              <img src={logo} alt="All Systems Go" className="h-12 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Protecting digital assets with advanced cybersecurity solutions. 
