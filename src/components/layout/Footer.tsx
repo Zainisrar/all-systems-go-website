@@ -99,14 +99,16 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  +1 (555) 123-4567
+                  +60 19-865 2830
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  123 Security Blvd, Suite 100<br />
-                  Cyber City, CC 10001
+                  9-1, Wisma Zelan,<br />
+                  Jalan Tasik Permaisuri 2,<br />
+                  Bandar Tun Razak,<br />
+                  56000 WP Kuala Lumpur
                 </span>
               </li>
             </ul>
