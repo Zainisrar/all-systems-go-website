@@ -31,7 +31,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="All Systems Go" className="h-12 w-auto" />
+              <img src={logo} alt="All Systems Go" className="h-16 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Protecting digital assets with advanced cybersecurity solutions. 
