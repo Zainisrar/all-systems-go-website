@@ -43,12 +43,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-              <Shield className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">
-              All Systems <span className="text-gradient">GO</span>
-            </span>
+            <img src={logo} alt="All Systems Go" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
