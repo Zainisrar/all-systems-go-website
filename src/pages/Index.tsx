@@ -121,10 +121,10 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="xl" className="bg-[hsl(var(--destructive))] hover:bg-[hsl(var(--destructive))]/90 text-white rounded-full px-10 uppercase tracking-wider font-semibold">
-                  <Link to="/contact">
-                    Get Started
+                  <a href="https://wa.me/60198652830" target="_blank" rel="noopener noreferrer">
+                    Book Appointment
                     <ArrowRight className="w-5 h-5" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </motion.div>
@@ -418,10 +418,10 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Button asChild size="xl" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                  <Link to="/contact">
-                    Contact Us
+                  <a href="https://wa.me/60198652830" target="_blank" rel="noopener noreferrer">
+                    Book Appointment
                     <ArrowRight className="w-5 h-5" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild size="xl" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                   <Link to="/services">
