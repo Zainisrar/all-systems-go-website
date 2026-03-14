@@ -135,9 +135,11 @@ const TrainingAdvertisement = () => {
                       <span>Posted: {new Date(ad.created_at).toLocaleDateString()}</span>
                     </div>
 
-                    <Button className="w-full">
-                      Learn More
-                      <ArrowRight className="w-4 h-4" />
+                    <Button asChild className="w-full">
+                      <Link to={`/training-advertisement/${ad._id}`}>
+                        Learn More
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
                     </Button>
                   </div>
                 </motion.div>
