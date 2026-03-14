@@ -9,6 +9,7 @@ import pmi from "@/assets/affiliations/pmi.png";
 import hrdCorp from "@/assets/affiliations/hrd-corp.png";
 import hrdCorpBadge from "@/assets/affiliations/hrd-corp-badge.png";
 import heroBg from "@/assets/hero-bg.png";
+import heroNetwork from "@/assets/hero-network.png";
 
 // Client logos
 import alamflora from "@/assets/clients/alamflora.png";
@@ -137,9 +138,9 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               className="hidden lg:flex justify-center"
             >
               <img 
-                src={heroBg} 
+                src={heroNetwork} 
                 alt="Global security network" 
-                className="w-full max-w-lg object-contain"
+                className="w-full max-w-2xl object-contain"
               />
             </motion.div>
           </div>
