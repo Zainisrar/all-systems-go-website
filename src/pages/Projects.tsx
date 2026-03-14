@@ -134,9 +134,11 @@ const Projects = () => {
                       Created: {new Date(project.created_at).toLocaleDateString()}
                     </p>
 
-                    <Button variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
-                      View Details
-                      <ExternalLink className="w-4 h-4" />
+                    <Button asChild variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
+                      <Link to={`/projects/${project._id}`}>
+                        View Details
+                        <ExternalLink className="w-4 h-4" />
+                      </Link>
                     </Button>
                   </div>
                 </motion.div>
