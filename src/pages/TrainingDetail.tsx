@@ -115,7 +115,7 @@ const TrainingDetail = () => {
                   <h2 className="text-xl font-semibold text-foreground mb-4">Training Details</h2>
                   <dl className="grid sm:grid-cols-2 gap-4">
                     {Object.entries(ad).map(([key, value]) => {
-                      if (key === 'image') return null;
+                      if (key === 'image' || key === '_id') return null;
                       return (
                         <div key={key} className="space-y-1">
                           <dt className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
