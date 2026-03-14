@@ -9,6 +9,7 @@ import pmi from "@/assets/affiliations/pmi.png";
 import hrdCorp from "@/assets/affiliations/hrd-corp.png";
 import hrdCorpBadge from "@/assets/affiliations/hrd-corp-badge.png";
 import heroBg from "@/assets/hero-bg.png";
+import heroNetwork from "@/assets/hero-network.png";
 
 // Client logos
 import alamflora from "@/assets/clients/alamflora.png";
