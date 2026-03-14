@@ -138,9 +138,9 @@ const Index = forwardRef<HTMLDivElement>((_, ref) => {
               className="hidden lg:flex justify-center"
             >
               <img 
-                src={heroBg} 
+                src={heroNetwork} 
                 alt="Global security network" 
-                className="w-full max-w-lg object-contain"
+                className="w-full max-w-2xl object-contain"
               />
             </motion.div>
           </div>
